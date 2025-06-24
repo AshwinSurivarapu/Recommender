@@ -1,0 +1,32 @@
+# java-backend/src/main/resources/graphql/schema.graphqls
+
+# Root Query type: Defines all the read operations (queries) available in your GraphQL API.
+
+type Query {
+    # Fetches a list of all available items.The return type is [Item!]!, meaning:
+    #   - []: It's a List (array) - Item: Each element in the list is of type Item (defined below)
+    #   - ! (inner): Each Item object in the list cannot be null- ! (outer): The list itself cannot be null
+    items: [Item!]!
+}
+
+# Root Mutation type: Defines all the write operations (mutating data or triggering actions) available.
+# Clients will use fields under this type to send data to the server.
+type Mutation {
+    # Generates a list of recommended items based on user preferences.
+    # Accepts a 'preferences' argument, which is a non-null String.
+    # Returns a list of non-null Item objects, similar to the 'items' query.
+    generateRecommendations(preferences: String!): [Item!]!
+}
+
+# Item type: Defines the structure of an Item object in your GraphQL schema.
+# This directly corresponds to your Java Item model (`com.recommendation.java_backend.model.item.Item`).
+type Item {
+    id: ID!         # Unique identifier for the item. ID is a special GraphQL scalar type (serialized as a String). Non-null.
+    name: String!   # Name of the item. Non-null.
+    category: String! # Category of the item. Non-null.
+    description: String! # Description of the item. Non-null. Used for AI processing.
+}
+
+# Note: The authentication login endpoint (`/api/auth/login`) will remain a standard REST endpoint.
+# It's not part of the GraphQL schema, as it's responsible for issuing the JWT token,
+# which then authenticates access to the GraphQL API itself.

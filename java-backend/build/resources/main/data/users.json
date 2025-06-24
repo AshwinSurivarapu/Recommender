@@ -1,0 +1,12 @@
+[
+  {
+    "username": "recommender",
+    "password": "password123",
+    "roles": ["RECOMMENDER", "VIEWER"]
+  },
+  {
+    "username": "viewer",
+    "password": "password456",
+    "roles": ["VIEWER"]
+  }
+]

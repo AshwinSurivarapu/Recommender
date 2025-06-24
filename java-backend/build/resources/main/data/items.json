@@ -1,0 +1,51 @@
+
+[
+{
+"id": "item1",
+"name": "The Great Gatsby",
+"category": "Classic Literature",
+"description": "Classic novel about the American Dream, jazz age, wealth and love."
+},
+{
+"id": "item2",
+"name": "1984",
+"category": "Dystopian Fiction",
+"description": "Dystopian social science fiction novel by George Orwell, totalitarianism, surveillance."
+},
+{
+"id": "item3",
+"name": "To Kill a Mockingbird",
+"category": "Classic Literature",
+"description": "Classic of modern American literature, dealing with racism and injustice in the Deep South."
+},
+{
+"id": "item4",
+"name": "Dune",
+"category": "Science Fiction",
+"description": "Epic science fiction novel about politics, religion, ecology, and human evolution on a desert planet."
+},
+{
+"id": "item5",
+"name": "Pride and Prejudice",
+"category": "Classic Romance",
+"description": "Romantic novel of manners by Jane Austen, marriage, class and social expectations."
+},
+{
+"id": "item6",
+"name": "Foundation",
+"category": "Science Fiction",
+"description": "Science fiction series by Isaac Asimov, galactic empire, psychohistory and collapse."
+},
+{
+"id": "item7",
+"name": "Lord of the Rings",
+"category": "Fantasy",
+"description": "High fantasy novel by J. R. R. Tolkien, quest, good vs evil, magic, hobbits."
+},
+{
+"id": "item8",
+"name": "The Hitchhiker's Guide to the Galaxy",
+"category": "Science Fiction Comedy",
+"description": "Comic science fiction series by Douglas Adams, absurdity, space travel, alien encounters."
+}
+]
