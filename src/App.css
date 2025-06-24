@@ -1,0 +1,30 @@
+/* react-frontend/src/App.css */
+
+/* Basic body reset, mostly covered by MUI's CssBaseline */
+body {
+  margin: 0;
+  padding: 0;
+  /* You can still set a global background here if not handled by ThemeProvider */
+  background-color: #e0e0e0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Any specific global overrides or utility classes not covered by MUI */
+/* For instance, if you have very specific typography that MUI doesn't easily capture */
+/* Or custom animations that are not component-specific */
+
+/* Example of an old style that might still be useful if not fully replaced by MUI: */
+.item-description {
+  font-size: 0.9em;
+  color: #666;
+  /* Add specific margins or other styles if needed */
+  margin-top: 5px;
+}
+
+/* Minimal container styling if not using MUI Box/Container for root layout */
+/* .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
